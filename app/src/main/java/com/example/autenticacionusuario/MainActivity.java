@@ -41,4 +41,9 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
+
+    public void registrarse(View view) {
+        Intent intentRegistro = new Intent(this, PantallaRegistro.class);
+        startActivity(intentRegistro);
+    }
 }
