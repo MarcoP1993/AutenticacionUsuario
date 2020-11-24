@@ -5,4 +5,14 @@
     <string name="btn_acceder">Acceder</string>
     <string name="imagen">TODO</string>
     <string name="txt_registro">Registrarse</string>
+    <string name="txt_registro_usuario">Registro Usuario</string>
+    <string name="edt_nombre">Nombre</string>
+    <string name="edt_passwordregistro">Contraseña</string>
+    <string name="edt_passwordrepetir">Repite Contraseña</string>
+    <string name="edt_email_registro">Email</string>
+    <string name="edt_telefono">Telefono</string>
+    <string name="Imagen_registro">TODO</string>
+    <string name="btn_registro">Button</string>
+    <string name="txt_volver_principal">Volver</string>
+    <string name="btn_registrarse">Registrarse</string>
 </resources>
