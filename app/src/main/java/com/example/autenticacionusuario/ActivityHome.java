@@ -11,7 +11,6 @@ import Clases.Usuario;
 public class ActivityHome extends AppCompatActivity {
 
     TextView txt_saludo = null;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,11 +20,11 @@ public class ActivityHome extends AppCompatActivity {
         if (intent != null) {
             String mensaje = intent.getStringExtra(MainActivity.EXTRAEMAIL);
             if (mensaje != null) {
-                txt_saludo.setText("BIENVENIDO" + mensaje);
+                txt_saludo.setText("BIENVENIDO " + mensaje);
             } else {
                 Usuario user1 = (Usuario) intent.getSerializableExtra(PantallaRegistro.EXTRA_OBJETO_USUARIO);
                 if (user1 != null) {
-                    txt_saludo.setText("BIENVENIDO NUEVO USUARIO" + user1.getNombre());
+                    txt_saludo.setText("BIENVENIDO NUEVO USUARIO " + user1.getNombre());
                 }
             }
 

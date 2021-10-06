@@ -13,7 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="280dp"
         android:layout_marginEnd="16dp"
-        android:autofillHints=""
+        android:autofillHints="no"
         android:ems="10"
         android:hint="@string/txt_email"
         android:inputType="textEmailAddress"
@@ -34,7 +34,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edt_email"
         app:layout_constraintTop_toBottomOf="@+id/edt_email"
-        android:autofillHints="" />
+        android:autofillHints="no" />
 
     <Button
         android:id="@+id/btn_acceder"

@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String EXTRAEMAIL = "email";
+    public static final String EXTRAEMAIL = "com.example.autenticacionusuario.objetousuario";
     EditText edt_email = null;
     EditText edt_password = null;
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         edt_password = findViewById(R.id.edt_password);
     }
 
-    public void acceder (View view){
+    public void acceder(View view) {
         String email = String.valueOf(edt_email.getText());
         String password = String.valueOf(edt_password.getText());
         if(validarOk (email,password)){
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }else{
             edt_email.setError("usuario o contraseña incorrecta");
-            Toast.makeText(this, "usuario o contraseña incorrecta", Toast.LENGTH_SHORT).show();//opcion 2 para mopstrar mensaje
+            Toast.makeText(this, "usuario o contraseña incorrecta", Toast.LENGTH_SHORT).show();//opcion 2 para mostrar mensaje
         }
     }
 

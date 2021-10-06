@@ -22,11 +22,12 @@ public class PantallaRegistro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_registro);
-        edt_nombre = findViewById(R.id.edt_nombre);
-        edt_email_registro = findViewById(R.id.edt_email);
-        edt_password_registro = findViewById(R.id.edt_passwordregistro);
-        edt_password_confirmacion = findViewById(R.id.edt_passwordrepetir);
-        edt_telefono = findViewById(R.id.edt_telefono);
+        edt_nombre = (EditText) findViewById(R.id.edt_nombre);
+        edt_email_registro =  (EditText) findViewById(R.id.edt_emailRegistro
+        );
+        edt_password_registro = (EditText) findViewById(R.id.edt_passwordregistro);
+        edt_password_confirmacion = (EditText) findViewById(R.id.edt_passwordrepetir);
+        edt_telefono = (EditText) findViewById(R.id.edt_telefono);
     }
 
     public void registrarse(View view) {
@@ -40,10 +41,11 @@ public class PantallaRegistro extends AppCompatActivity {
         String nombre = String.valueOf(edt_nombre.getText());
         String emailRegistro = String.valueOf(edt_email_registro.getText());
         String telefono = String.valueOf(edt_telefono);
-        Usuario user1 = new Usuario(nombre, emailRegistro, password1, telefono);
+        Usuario user1 = new Usuario(emailRegistro, nombre, password1, telefono);
         Intent intent = new Intent(this, ActivityHome.class);
         intent.putExtra(EXTRA_OBJETO_USUARIO, user1);
         startActivity(intent);
+        finish();
     }
 
     public void volverInicio(View view) {
